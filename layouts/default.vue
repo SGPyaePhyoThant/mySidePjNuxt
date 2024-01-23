@@ -6,6 +6,7 @@
                     <li><NuxtLink to="/" class="font-bold">MainScreen</NuxtLink></li>
                     <li><NuxtLink to="/about">About</NuxtLink></li>
                     <li><NuxtLink to="/products" class="btn">Products</NuxtLink></li>
+                    <li><NuxtLink to="/products/ppt" class="btn">ProductsPPT</NuxtLink></li>
                 </ul>
             </nav>
         </header>
