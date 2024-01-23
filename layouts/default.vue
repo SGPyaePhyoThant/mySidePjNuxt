@@ -22,6 +22,6 @@
 
 <style  scoped>
 .router-link-exact-active {
-    color: rgb(9, 247, 120);
+    color: #00DC82;
 }
 </style>

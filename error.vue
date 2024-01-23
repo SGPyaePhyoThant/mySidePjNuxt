@@ -15,6 +15,6 @@
 
 <style scoped>
 .text-clrDef {
-    color: rgb(255, 0, 0);
+    color: #00DC82;
 }
 </style>

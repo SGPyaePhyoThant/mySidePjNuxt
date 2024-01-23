@@ -15,6 +15,15 @@ definePageMeta({
     })
     // fetch products
    const { data : products } =  await useFetch('https://fakestoreapi.com/products')
+//    custom header by useHead
+useHead({
+    title : 'Nuxt3 | Products',
+    meta : [
+        {
+            name:'desc', content:'nuxt product index'
+        }
+    ]
+})
 </script>
 
 <style  scoped>

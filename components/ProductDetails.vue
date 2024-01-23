@@ -7,6 +7,10 @@
           <div class="p-7">
             <h2 class="text-4xl my-7">{{productByID.title}}</h2>
             <p>{{productByID.price}}</p>
+            <button class="btn flex">
+              <i class="material-icons mr-2">add_shopping_cart</i>
+              <span>Add to cart</span>
+            </button>
           </div>
         </div>
     </div>

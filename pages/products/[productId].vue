@@ -1,5 +1,9 @@
 <template>
     <div>
+        <Head>
+            <Title>Nuxt3 PPT | {{productLink.title}}</Title>
+            <Meta name="description" :content="productLink.description"></Meta>
+        </Head>
         <ProductDetails :productByID = "productLink"/>
     </div>
 </template>
