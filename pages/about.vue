@@ -6,10 +6,7 @@
 </template>
 
 <script setup>
-    const {data} = await useFetch('/api/ppt?name=specialPromotion',{
-        method : 'post',
-        body   : {fes:'Christmas',percent : 5}
-    })
+    const {data} = await useFetch('/api/ppt')
 </script>
 
 <style  scoped>
