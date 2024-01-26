@@ -6,7 +6,7 @@
 </template>
 
 <script setup>
-    const {data} = await useFetch('/api/ppt')
+    const {data} = await useFetch(`/api/currency/MMK`)
 </script>
 
 <style  scoped>
