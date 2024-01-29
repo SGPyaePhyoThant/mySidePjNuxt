@@ -1,7 +1,7 @@
 <template>
     <div>
-        <h3>This is about page under pages____________________.</h3>
-        <p>{{data}}</p>
+        <!-- <p>{{data}}</p> -->
+        <TodayMmk :mmkData="data"/>
     </div>
 </template>
 

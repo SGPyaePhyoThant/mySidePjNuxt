@@ -1,13 +1,12 @@
 export default defineEventHandler(async (event) => {
+  console.log('event',event)
     try {
-      const { code } = event.context.params;
+      const { code } = event.context.params
       const { currencyKey } = useRuntimeConfig();
-      const uri = `https://api.currencyapi.com/v3/latest?currencies=${code}&apikey=${currencyKey}`;
-      const { data } = await useFetch(uri);
-      return data;
+      const uri = `https://api.currencyapi.com/v3/latest?currencies=${code}&apikey=${currencyKey}`
+      const { data } = await $fetch(uri);
+      return data
     } catch (error) {
-      console.error("Error fetching currency data:", error);
-      // Handle the error, maybe return a default response or an error status
       return { error: "Failed to fetch currency data" };
     }
   });
