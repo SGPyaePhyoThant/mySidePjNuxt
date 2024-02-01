@@ -1,15 +1,12 @@
 <template>
     <div>
-        <h3>This is about page under pages____________________.</h3>
-        <p>{{data}}</p>
+        <!-- <p>{{data}}</p> -->
+        <TodayMmk :mmkData="data"/>
     </div>
 </template>
 
 <script setup>
-    const {data} = await useFetch('/api/ppt?name=specialPromotion',{
-        method : 'post',
-        body   : {fes:'Christmas',percent : 5}
-    })
+    const {data} = await useFetch(`/api/currency/MMK`)
 </script>
 
 <style  scoped>

@@ -11,7 +11,6 @@
 <script setup>
 
 const {productId}          = useRoute().params
-console.log('_____id____',productId)
 const uri                  = 'https://fakestoreapi.com/products/' + productId
 const {data : productLink} = await useFetch(uri)
 definePageMeta({
